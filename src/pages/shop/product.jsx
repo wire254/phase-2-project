@@ -13,6 +13,7 @@ function Product (props) {
                     {artist}
                 </p>
             </div>
+            <button className="addToCartBttn"> Add To Cart</button>
         </div>
     )
 }
