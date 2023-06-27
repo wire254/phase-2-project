@@ -1,21 +1,21 @@
 import React from "react";
 
 function Product (props) {
-    const {id, artist, image, info} = props.data;
+    const {id, name, artist, image, info} = props.data;
     return(
         <div className="product">
             <img src={image}/>
             <div className="info">
                 <p>
-                    <b>{id}</b>
+                    <b>{name}</b>
                 </p>
                 <p>
-                    {artist}
+                    <b>{artist}</b>
                 </p>
             </div>
             <button className="addToCartBttn"> Add To Cart</button>
         </div>
-    )
-}
+    );
+};
 
 export default Product
