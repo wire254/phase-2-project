@@ -1,9 +1,19 @@
 import React from "react";
 
 function Product (props) {
-    const {} = props.data;
+    const {id, artist, image, info} = props.data;
     return(
-        <div>product</div>
+        <div className="product">
+            <img src={image}/>
+            <div className="info">
+                <p>
+                    <b>{id}</b>
+                </p>
+                <p>
+                    {artist}
+                </p>
+            </div>
+        </div>
     )
 }
 
